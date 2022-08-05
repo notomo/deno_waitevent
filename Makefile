@@ -12,4 +12,4 @@ check:
 .PHONY: check
 
 install:
-	deno install ${DENO_ARGS} ${MAIN}
+	deno install -f ${DENO_ARGS} ${MAIN}
