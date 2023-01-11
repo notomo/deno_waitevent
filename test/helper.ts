@@ -1,4 +1,4 @@
-import * as path from "https://deno.land/std@0.150.0/path/mod.ts";
+import * as path from "https://deno.land/std@0.171.0/path/mod.ts";
 
 type Client = {
   server: Deno.Listener;

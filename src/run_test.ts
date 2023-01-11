@@ -1,6 +1,6 @@
 import { buildCommand, receiveOne, run } from "./run.ts";
 import { testClient, testEditor } from "../test/helper.ts";
-import { assertEquals } from "https://deno.land/std@0.150.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@0.171.0/testing/asserts.ts";
 
 Deno.test("run", async (t) => {
   await t.step("returns true if receives done event", async () => {

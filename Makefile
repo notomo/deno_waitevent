@@ -1,5 +1,6 @@
 MAIN := ./waitevent.ts
-DENO_ARGS:= --allow-run --allow-net
+LOCK := --lock=deno.lock
+DENO_ARGS:= ${LOCK} --allow-run --allow-net
 
 test: 
 	deno test ${DENO_ARGS}
@@ -7,7 +8,7 @@ test:
 
 check:
 	deno fmt --check
-	deno check ${MAIN}
+	deno check ${LOCK} ${MAIN}
 	deno lint
 .PHONY: check
 

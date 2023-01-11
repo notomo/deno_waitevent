@@ -1,4 +1,4 @@
-import * as flags from "https://deno.land/std@0.150.0/flags/mod.ts";
+import * as flags from "https://deno.land/std@0.171.0/flags/mod.ts";
 
 export async function run(rawArgs: string[]): Promise<boolean> {
   const server = Deno.listen({ transport: "tcp", port: 0 });
